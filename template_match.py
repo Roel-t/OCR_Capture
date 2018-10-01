@@ -1,10 +1,12 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+#2 seconds to compile
 
-img_rgb = cv2.imread('images/b.png')
+
+img_rgb = cv2.iamread('images/b.png')
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
-template = cv2.imread('images/template.PNG',0)
+template = cv2.imread('images/template2.PNG',0)
 w, h = template.shape[::-1]
 
 res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)

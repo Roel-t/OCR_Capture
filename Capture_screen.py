@@ -2,11 +2,11 @@
 import mss
 import mss.tools
 
-
+#15 seconds
 with mss.mss() as sct:
     # The screen part to capture
-    monitor = {"top": 589, "left": 65, "width": 540, "height": 450}
-    output = "images/b.png".format(**monitor)
+    monitor = {"top": 300, "left": 65, "width": 800, "height": 710}
+    output = "images/f.png".format(**monitor)
 
     # Grab the data
     sct_img = sct.grab(monitor)
